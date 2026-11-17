@@ -3792,7 +3792,7 @@ const c1=[0.96,0.62,0.04],c2=[0.20,0.73,0.51];
 let T=1,C=[0,0,0],alphaSum=0;
 for(let i=0;i<N;i++){
 const t=(i+0.5)/N;
-const g1=Math.exp(-((t-0.35)/0.08)**2),g2=Math.exp(-((t-0.70)/0.10)**2);
+const g1=Math.exp(-(((t-0.35)/0.08)**2)),g2=Math.exp(-(((t-0.70)/0.10)**2));
 const s=scale*(1.2*g1+0.8*g2);
 const w1=g1,w2=g2;
 const col=[(w1*c1[0]+w2*c2[0])/(w1+w2+1e-9),(w1*c1[1]+w2*c2[1])/(w1+w2+1e-9),(w1*c1[2]+w2*c2[2])/(w1+w2+1e-9)];
